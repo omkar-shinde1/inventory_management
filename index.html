@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Inventory Management By Omkar Shinde</h2>
+
+        <!-- Add Item Form -->
+        <form id="inventory-form">
+            <input type="text" id="item-name" placeholder="Item Name" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <input type="number" step="0.01" id="price" placeholder="Price" required>
+            <select id="category" required>
+                <option value="Electronics">Electronics</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Clothing">Clothing</option>
+            </select>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search by Item Name or Category" />
+
+        <!-- Sorting buttons -->
+        <div class="sort-buttons">
+            <button id="sort-price-asc">Sort by Price Ascending</button>
+            <button id="sort-price-desc">Sort by Price Descending</button>
+        </div>
+
+        <!-- Total Price and Quantity -->
+        <div class="totals">
+            <p>Total Quantity: <span id="total-quantity">0</span></p>
+            <p>Total Price: <span id="total-price">0.00</span></p>
+        </div>
+
+        <!-- Inventory Table -->
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Total Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
