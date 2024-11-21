@@ -11,7 +11,7 @@ Mobile Responsive: Fully responsive design for an optimal user experience on all
 Demo
 You can view the live project here:
 
-https://yourusername.github.io/inventory-management/
+https://omkar-shinde1.github.io/inventory_management/
 
 Technologies Used
 HTML: Used for the structure of the application.
